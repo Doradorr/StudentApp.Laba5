@@ -18,21 +18,21 @@ namespace StudentApp.Tests
         [Fact]
         public void Should_ReturnStudentsWithIdealWeight()
         {
-            // Arrange
+            
             var repo = new FakeRepository();
             repo.Data = new List<Student>
             {
-                new Student { Height=180, Weight=70 },   // ideal
-                new Student { Height=165, Weight=60 },   // not ideal
-                new Student { Height=150, Weight=40 }    // ideal
+                new Student { Height=180, Weight=70 },   
+                new Student { Height=165, Weight=60 },   
+                new Student { Height=150, Weight=40 }    
             };
 
             var service = new StudentService(repo);
 
-            // Act
+            
             var result = service.GetIdealWeightStudents();
 
-            // Assert
+            
             Assert.Equal(2, result.Count);
         }
 
