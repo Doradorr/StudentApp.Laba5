@@ -7,12 +7,12 @@
 
     public class Librarian : IBicycleSkill
     {
-        public string RideBicycle() => "The librarian rides a bicycle calmly.";
+        public string RideBicycle() => "Вміє кататись на велосипеді";
     }
 
     public class SoftwareDeveloper : IBicycleSkill
     {
-        public string RideBicycle() => "The software developer rides a bicycle fast.";
+        public string RideBicycle() => "Також вміє кататися";
     }
 }
 
